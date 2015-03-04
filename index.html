@@ -30,15 +30,21 @@
       <li><a href="">Guia</a></li>
       <li><a href="">Torneos</a></li>
       <li><a href="">Quienes somos</a></li>
-      <li><a href="">Login</a></li>
-      <li><a href="" class="boton_especial icon-pen">Publicar Torneo</a></li>
+      <li><a href="" id="logueo">Login</a></li>
+      <li id="publicar_torneo"><a href="" class="boton_especial icon-pen">Publicar Torneo</a></li>
     </ul>
 
   </nav>
 
+  <form id="formulario_logueo" action="#" method="post">
+    <input type="text" id="user" value="" required="true" placeholder="Usuario">
+    <input type="password" id="password" value="" required="true" placeholder="Contraseña">
+    <input type="submit" name="ingresar" value="Ingresar">
+  </form>
+
   <aside>
 
-    <video width="400" autoplay controls>
+    <video width="400" preload="none" controls>
       <source src="video/ubuntu.ogg" type="video/ogg">
       Actualiza Navegador
     </video>
@@ -207,5 +213,7 @@
     <p>Platzi 2015</p>
   </footer>
 
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/interacciones.js"></script>
 </body>
 </html>

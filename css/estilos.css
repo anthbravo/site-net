@@ -181,6 +181,7 @@ footer p:last-child:after{
 .torneo h2{
   font-style: italic;
   text-align: center;
+	padding: 1em;
 }
 
 .torneo h2 a{
@@ -260,4 +261,21 @@ footer p:last-child:after{
   aside video{
     width: 100%;
   }
+}
+
+
+/*FORMULARIO*/
+
+#formulario_logueo{
+	display: none;
+	padding: 1em 1em 0em 1em;
+	text-align: right;
+}
+
+#formulario_logueo input{
+	border-radius: 0.5em;
+}
+
+#formulario_logueo input[type="submit"]{
+	box-shadow: #000000 5px 5px 10px;
 }
