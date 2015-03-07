@@ -1,33 +1,35 @@
 var usuario_administrador = 'administrador',
-    password_administrador = '123456';
+  password_administrador = '123456';
 
-var $formulario_logueo = $('#formulario_logueo'),
-    $logueo = $('#logueo'),
-    $publicar_torneo = $('#publicar_torneo'),
-    $user = $('#user'),
-    $password = $('#password');
+var formulario_logueo = document.getElementById('formulario_logueo'),
+  logueo = document.getElementById('logueo'),
+  publicar_torneo = document.getElementById('publicar_torneo'),
+  user = document.getElementById('user'),
+  password = document.getElementById('password'),
+  prueba = document.getElementById('prueba');
 
-function mostrarLogueo(){
+function mostrarLogueo(e) {
 
-  $formulario_logueo.slideToggle();
-  return false;
+  formulario_logueo.classList.toggle('toggle');
+  e.preventDefault();
+  e.stopPropagation();
 }
 
-function validarLogueo(){
+function validarLogueo() {
 
-  if($user.val() == usuario_administrador &&
-      $password.val() == password_administrador){
+  if (user.value == usuario_administrador &&
+    password.value == password_administrador) {
 
-    $formulario_logueo.slideToggle();
-  }else{
+    formulario_logueo.classList.toggle('toggle');
+  } else {
     alert('Usuario o contraseña incorrecta, Intentelo otra vez');
   }
 
-  return false;
+  e.preventDefault();
+  e.stopPropagation();
 }
 
 // Eventos
-
-$logueo.on('click', mostrarLogueo);
-$publicar_torneo.on('click', mostrarLogueo);
-$formulario_logueo.on('submit', validarLogueo);
+logueo.addEventListener('click', mostrarLogueo);
+publicar_torneo.addEventListener('click', mostrarLogueo);
+formulario_logueo.addEventListener('submit', validarLogueo);

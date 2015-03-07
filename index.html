@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Site-Net es un sistema que plantea la promoción de competencia
    basados en torneos, el uso es totalmente gratis; a su vez permite obtener dinero
    por torneos realizados">
-  <meta name="viewport" content="with= device-width, minimun-scale= 1, maximun-scale= 1"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
   <title>Site-Net</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
   <header>
     <figure class="logo">
-      <img src="images/site_net.png" alt="Logo de Site Net">
+      <img src="images/site_net.png" alt="Logo de Site - Net">
     </figure>
 
-    <h1>Site-Net | Creación de torneos gratis</h1>
+    <h1>Site - Net ° Torneo Gratis</h1>
 
     <figure class="foto">
       <img src="images/anthony_bravo.jpg">
@@ -27,41 +29,51 @@
   </header>
   <nav>
     <ul>
-      <li><a href="">Guia</a></li>
-      <li><a href="">Torneos</a></li>
-      <li><a href="">Quienes somos</a></li>
-      <li><a href="" id="logueo">Login</a></li>
-      <li id="publicar_torneo"><a href="" class="boton_especial icon-pen">Publicar Torneo</a></li>
+      <li><a href="">Guia</a>
+      </li>
+      <li><a href="">Torneos</a>
+      </li>
+      <li><a href="">Quienes Somos</a>
+      </li>
+      <li><a href="" id="logueo">Login</a>
+      </li>
+      <li id="publicar_torneo"><a href="" class="publicar_torneo icon-pen">Publicar Torneo</a>
+      </li>
     </ul>
 
   </nav>
 
-  <form id="formulario_logueo" action="#" method="post">
-    <input type="text" id="user" value="" required="true" placeholder="Usuario">
-    <input type="password" id="password" value="" required="true" placeholder="Contraseña">
-    <input type="submit" name="ingresar" value="Ingresar">
+  <form action="#" class="formulario_logueo toggle" id="formulario_logueo" method="post">
+    <input id="user" placeholder="Usuario" required="true" type="text" value="">
+    <input id="password" placeholder="Contraseña" required="true" type="password" value="">
+    <input name="ingresar" type="submit" value="Ingresar">
   </form>
 
-  <aside>
+  <aside class="publicidad">
 
     <video width="400" preload="none" controls>
       <source src="video/ubuntu.ogg" type="video/ogg">
-      Actualiza Navegador
+        Actualiza Navegador
     </video>
 
   </aside>
 
   <section class="torneo">
     <article>
-      <figure><img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo"></figure>
-      <h2><a href="#">Torneo dota2 para el 14 de marzo</a></h2>
+      <figure>
+        <img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo">
+      </figure>
+      <h2><a href="#">Torneo dota2 para el 14 de marzo</a>
+      </h2>
 
-      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a></div>
+      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a>
+      </div>
 
       <div class="datos_torneo">
         <a href="">ponny</a>
         <span class="tiempo_torneo">
-          hace <strong>5</strong> min
+          hace
+          <strong>5</strong> min
         </span>
       </div>
 
@@ -75,15 +87,47 @@
 
     </article>
     <article>
-      <figure><img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo"></figure>
-      <h2><a href="#">Torneo dota2 para el 14 de marzo</a></h2>
+      <figure>
+        <img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo">
+      </figure>
+      <h2><a href="#">Torneo dota2 para el 14 de marzo</a>
+      </h2>
 
-      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a></div>
+      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a>
+      </div>
 
       <div class="datos_torneo">
         <a href="">ponny</a>
         <span class="tiempo_torneo">
-          hace <strong>5</strong> min
+          hace
+          <strong>5</strong> min
+        </span>
+      </div>
+
+      <div class="votacion">
+        <a href="" class="icon-arrow-up"></a>
+        720
+        <a href="" class="icon-arrow-down"></a>
+        <a href="" class="comentario_torneo">...</a>
+        <a href="" class="guardar_torneo icon-star-full"></a>
+      </div>
+
+    </article>
+    <article>
+      <figure>
+        <img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo">
+      </figure>
+      <h2><a href="#">Torneo dota2 para el 14 de marzo</a>
+      </h2>
+
+      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a>
+      </div>
+
+      <div class="datos_torneo">
+        <a href="">ponny</a>
+        <span class="tiempo_torneo">
+          hace
+          <strong>5</strong> min
         </span>
       </div>
 
@@ -97,15 +141,20 @@
 
     </article>
     <article>
-      <figure><img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo"></figure>
-      <h2><a href="#">Torneo dota2 para el 14 de marzo</a></h2>
+      <figure>
+        <img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo">
+      </figure>
+      <h2><a href="#">Torneo dota2 para el 14 de marzo</a>
+      </h2>
 
-      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a></div>
+      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a>
+      </div>
 
       <div class="datos_torneo">
         <a href="">ponny</a>
         <span class="tiempo_torneo">
-          hace <strong>5</strong> min
+          hace
+          <strong>5</strong> min
         </span>
       </div>
 
@@ -119,15 +168,20 @@
 
     </article>
     <article>
-      <figure><img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo"></figure>
-      <h2><a href="#">Torneo dota2 para el 14 de marzo</a></h2>
+      <figure>
+        <img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo">
+      </figure>
+      <h2><a href="#">Torneo dota2 para el 14 de marzo</a>
+      </h2>
 
-      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a></div>
+      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a>
+      </div>
 
       <div class="datos_torneo">
         <a href="">ponny</a>
         <span class="tiempo_torneo">
-          hace <strong>5</strong> min
+          hace
+          <strong>5</strong> min
         </span>
       </div>
 
@@ -141,15 +195,20 @@
 
     </article>
     <article>
-      <figure><img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo"></figure>
-      <h2><a href="#">Torneo dota2 para el 14 de marzo</a></h2>
+      <figure>
+        <img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo">
+      </figure>
+      <h2><a href="#">Torneo dota2 para el 14 de marzo</a>
+      </h2>
 
-      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a></div>
+      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a>
+      </div>
 
       <div class="datos_torneo">
         <a href="">ponny</a>
         <span class="tiempo_torneo">
-          hace <strong>5</strong> min
+          hace
+          <strong>5</strong> min
         </span>
       </div>
 
@@ -163,37 +222,20 @@
 
     </article>
     <article>
-      <figure><img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo"></figure>
-      <h2><a href="#">Torneo dota2 para el 14 de marzo</a></h2>
+      <figure>
+        <img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo">
+      </figure>
+      <h2><a href="#">Torneo dota2 para el 14 de marzo</a>
+      </h2>
 
-      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a></div>
+      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a>
+      </div>
 
       <div class="datos_torneo">
         <a href="">ponny</a>
         <span class="tiempo_torneo">
-          hace <strong>5</strong> min
-        </span>
-      </div>
-
-      <div class="votacion">
-        <a href="" class="up icon-arrow-up"></a>
-        720
-        <a href="" class="down icon-arrow-down"></a>
-        <a href="" class="comentario_torneo">...</a>
-        <a href="" class="guardar_torneo icon-star-full"></a>
-      </div>
-
-    </article>
-    <article>
-      <figure><img src="images/dota2.jpg" alt="Torneo dota2 para el 14 de marzo"></figure>
-      <h2><a href="#">Torneo dota2 para el 14 de marzo</a></h2>
-
-      <div class="autor_torneo">por <a href="">Anthony Bravo Berrío</a></div>
-
-      <div class="datos_torneo">
-        <a href="">ponny</a>
-        <span class="tiempo_torneo">
-          hace <strong>5</strong> min
+          hace
+          <strong>5</strong> min
         </span>
       </div>
 
@@ -209,11 +251,14 @@
 
   </section>
   <footer>
-    <p><strong>Powered by Anthony</strong></p>
+    <p>
+      <strong>Powered by Anthony</strong>
+    </p>
     <p>Platzi 2015</p>
   </footer>
 
-  <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/interacciones.js"></script>
+
 </body>
+
 </html>

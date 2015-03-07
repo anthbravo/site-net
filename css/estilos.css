@@ -1,281 +1,236 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-4mb6cp');
-	src:url('../fonts/icomoon.eot?#iefix-4mb6cp') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-4mb6cp') format('woff'),
-		url('../fonts/icomoon.ttf?-4mb6cp') format('truetype'),
-		url('../fonts/icomoon.svg?-4mb6cp#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?-4mb6cp');
+  src: url('../fonts/icomoon.eot?#iefix-4mb6cp') format('embedded-opentype'), url('../fonts/icomoon.woff?-4mb6cp') format('woff'), url('../fonts/icomoon.ttf?-4mb6cp') format('truetype'), url('../fonts/icomoon.svg?-4mb6cp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-pen:before {
-	content: "\e908";
+  content: "\e908";
   margin-right: 0.5em;
 }
-
 .icon-star-full:before {
-	content: "\e9d9";
+  content: "\e9d9";
   color: #fbff00;
   margin-right: 0.5em;
 }
-
 .icon-arrow-up:before {
-	content: "\ea32";
+  content: "\ea32";
   color: #08ff00;
 }
-
 .icon-arrow-down:before {
-	content: "\ea36";
+  content: "\ea36";
   color: #ff5d00;
 }
-
-a{
+a {
   color: #af2121;
 }
-
-body{
+body {
   background-color: #d9d9d9;
   font-family: "Open Sans";
   font-size: 16px;
 }
-
-header{
-  position: relative;
+header {
   background-color: #af2121;
   color: #ffffff;
   overflow: hidden;
+  position: relative;
 }
-
-header h1{
-  margin: 0.62em 100px 0 0;
+header h1 {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-
-.logo img{
+.logo {
+  float: left;
+}
+.logo img {
   border-right: 1px solid white;
   padding-right: 0.5em;
   width: 55px;
   height: 85px;
 }
-
-header figure{
-  float: left;
+.foto {
+  top: 0;
+  right: 0;
+  position: absolute;
 }
-
-
-.foto img{
+.foto img {
+  border-radius: 50%;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
 }
-
-.foto{
-  top:0;
-  right:0;
-  position:absolute;
-}
-
-nav{
+nav {
   background: #7C7C7C;
-  padding: 0.5em 12em 0.5em 0;
+  padding: 0.5em 10em 0.5em 0;
   position: relative;
 }
-
-nav ul{
+nav ul {
   list-style: none;
   margin: 0;
 }
-
-nav ul li a:hover{
-	background: #d9d9d9;
-	transition: 1s;
+nav ul li a:hover {
+  background: #d9d9d9;
+  transition: 1s;
 }
-
-nav ul li{
+nav ul li {
   display: inline-block;
   margin: 0 1em 0 0;
 }
-
-nav ul li a{
+nav ul li a {
   color: #ffffff;
   padding: 0.5em 0;
 }
-
-.boton_especial{
+.publicar_torneo {
   background: #0062ff;
-  margin: 0 1em;
-  position: absolute;
   border-radius: 5px;
+  box-shadow: #b0b7d3 5px 5px 20px;
+  font-style: italic;
+  margin: 0 1em;
+  padding: 1em 1em;
+  position: absolute;
+  text-decoration: none;
+  text-shadow: #b0b7d3 2px 2px 5px;
   top: -0.5em;
   right: 0;
-  padding: 1em 1em;
-  text-decoration: none;
-  font-style: italic;
-  text-shadow: #b0b7d3 2px 2px 5px;
-  box-shadow: #b0b7d3 5px 5px 20px;
 }
-
-aside{
+.publicidad {
   display: none;
 }
-
-footer{
-  color: #ffffff;
-  background: #af2121;
-  text-align: center;
-  padding: 1em;
-}
-
-footer p:first-child{
-  margin-bottom: 0;
-}
-
-footer p:last-child{
-  margin-top: 0;
-}
-
-footer p:last-child:before{
-  content: "- "
-}
-
-footer p:last-child:after{
-  content: " -"
-}
-
-.torneo{
+.torneo {
   margin: 1em;
 }
-
-.torneo article{
+.torneo article {
   background: #ffffff;
   border-bottom: 3px solid #af2121;
+  margin-bottom: 1em;
   overflow: hidden;
   position: relative;
-  margin-bottom: 1em;
 }
-
-.torneo figure{
+.torneo figure {
   float: left;
   margin-bottom: 2em;
 }
-
-.torneo img{
-  height: 150px;
+.torneo img {
   border: 1px red solid;
+  height: 150px;
 }
-
-.torneo h2{
+.torneo h2 {
   font-style: italic;
   text-align: center;
-	padding: 1em;
+  padding: 1em;
 }
-
-.torneo h2 a{
+.torneo h2 a {
   color: #000000;
   text-decoration: none;
 }
-
-.autor_torneo{
+.autor_torneo {
   color: #b1b1b1;
-}
-
-.datos_torneo{
+  margin: 0 1em;
   text-align: right;
+}
+.datos_torneo {
   margin: 1em 1em 2em 1em;
+  text-align: right;
 }
-
-.datos_torneo a{
+.datos_torneo a {
   background: black;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.2em 0.5em;
-  float: left;
   border-radius: 0.5em;
+  color: #ffffff;
+  float: left;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
 }
-
-.datos_torneo .tiempo_torneo{
+.datos_torneo .tiempo_torneo {
   color: #b1b1b1;
 }
-
-.votacion{
+.votacion {
   bottom: 0;
   left: 7.5%;
   position: absolute;
   width: 85%;
 }
-
-.votacion .comentario_torneo,
-.votacion .guardar_torneo
-{
+.votacion .comentario_torneo, .votacion .guardar_torneo {
   float: right;
 }
-
-.votacion a{
+.votacion a {
   text-decoration: none;
 }
+footer {
+  background: #af2121;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+}
+footer p:first-child {
+  margin-bottom: 0;
+}
+footer p:last-child {
+  margin-top: 0;
+}
+footer p:last-child:before {
+  content: "- "
+}
+footer p:last-child:after {
+  content: " -"
+}
+/*Efectos*/
 
+.toggle {
+  display: none;
+}
+/*Responsive Design*/
 /*@media print {
   body{
     font-size: 50px;
   }
 }*/
 
-@media screen and (min-width: 800px){
-  .torneo{
+@media screen and (min-width: 800px) {
+  .torneo {
     overflow: hidden;
   }
-
-  .torneo article{
-    width: 49%;
+  .torneo article {
     float: right;
+    width: 49%;
   }
-
-  .torneo article:nth-child(odd){
+  .torneo article:nth-child(odd) {
     float: left;
   }
-
 }
-
-@media screen and (min-width: 1000px){
-  aside{
+@media screen and (min-width: 1000px) {
+  .publicidad {
     display: block;
     float: right;
     margin: 1em;
     width: 20%;
   }
-
-  aside video{
+  .publicidad video {
     width: 100%;
   }
 }
+/*FORMULARIOS*/
 
-
-/*FORMULARIO*/
-
-#formulario_logueo{
-	display: none;
-	padding: 1em 1em 0em 1em;
-	text-align: right;
+.formulario_logueo {
+  padding: 1em 1em 0em 1em;
+  text-align: right;
 }
-
-#formulario_logueo input{
-	border-radius: 0.5em;
+.formulario_logueo input {
+  border-radius: 0.5em;
 }
-
-#formulario_logueo input[type="submit"]{
-	box-shadow: #000000 5px 5px 10px;
+.formulario_logueo input[type="submit"] {
+  box-shadow: #000000 5px 5px 10px;
 }
